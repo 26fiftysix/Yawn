@@ -1,3 +1,7 @@
+forked to remove some stuff like feedly and google fonts:
+- [x] remove feedly from footer
+- [ ] remove google fonts from theme
+
 # Dawn
 
 A highly functional theme that adapts to the reader's preferences. Let them read, search, subscribe, navigate, and more with ease. Completely free and fully responsive, released under the MIT license.
