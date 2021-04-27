@@ -1,5 +1,5 @@
 forked to remove some stuff like feedly and google fonts:
-- [x] remove member CTA on frontpage
+- [x] disable member CTA on frontpage
 - [x] remove feedly from footer
 - [x] remove google fonts from theme
 
