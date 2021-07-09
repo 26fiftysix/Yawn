@@ -9,7 +9,7 @@
     padding: 0 0.8rem;
     height: 2.6rem;
     color: var(--white-color);
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     line-height: 1;
     font-weight: 800;
     letter-spacing: 0.04rem;
@@ -37,4 +37,12 @@
 
 .share-link-twitter {
     background-color: var(--twitter-color);
+}
+
+.share-link-line {
+    background-color: var(--line-color);
+}
+
+.share-link-telegram {
+    background-color: var(--telegram-color);
 }
