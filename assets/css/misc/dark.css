@@ -90,4 +90,12 @@
     html:not(.theme-light) .share-link-twitter {
         color: var(--twitter-color);
     }
+
+    html:not(.theme-light) .share-link-telegram {
+        color: var(--telegram-color);
+    }
+
+    html:not(.theme-light) .share-link-line {
+        color: var(--line-color);
+    }
 }
