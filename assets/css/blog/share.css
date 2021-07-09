@@ -41,8 +41,10 @@
 
 .share-link-line {
     background-color: var(--line-color);
+    fill: currentColor;
 }
 
 .share-link-telegram {
     background-color: var(--telegram-color);
+    fill: currentColor;
 }
