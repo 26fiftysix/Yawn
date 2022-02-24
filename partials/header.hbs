@@ -2,6 +2,9 @@
     <div class="header-left">
         <a class="logo" href="{{@site.url}}">
             {{#if @site.logo}}
+                {{#if @custom.white_logo_for_dark_mode}}
+                    <img class="logo-image white" src="{{img_url @custom.white_logo_for_dark_mode}}" alt="{{@site.title}}">
+                {{/if}}
                 <img class="logo-image" src="{{@site.logo}}" alt="{{@site.title}}">
             {{else}}
                 <span class="logo-text">{{@site.title}}</span>
@@ -11,18 +14,22 @@
     {{#if @site.navigation}}
         <nav class="main-nav hidden-xs hidden-sm hidden-md">
             {{navigation}}
-            <button class="button-icon menu-item-button js-modal" data-modal="search" aria-label="Search">
+            {{#if @custom.content_api_key_for_search}}
+                <button class="button-icon menu-item-button js-modal" data-modal="search" aria-label="Search">
+                    <svg class="icon">
+                        <use xlink:href="#magnify"></use>
+                    </svg>
+                </button>
+            {{/if}}
+        </nav>
+
+        {{#if @custom.content_api_key_for_search}}
+            <button class="button-icon hidden-lg hidden-xl js-modal" data-modal="search" aria-label="Search">
                 <svg class="icon">
                     <use xlink:href="#magnify"></use>
                 </svg>
             </button>
-        </nav>
-
-        <button class="button-icon hidden-lg hidden-xl js-modal" data-modal="search" aria-label="Search">
-            <svg class="icon">
-                <use xlink:href="#magnify"></use>
-            </svg>
-        </button>
+        {{/if}}
         <div class="burger hidden-lg hidden-xl">
             <div class="burger-bar"></div>
             <div class="burger-bar"></div>
